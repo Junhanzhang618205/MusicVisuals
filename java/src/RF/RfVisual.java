@@ -1,11 +1,9 @@
 package RF;
 
-import example.WaveForm;
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class RfVisual extends Visual {
@@ -23,7 +21,7 @@ public class RfVisual extends Visual {
         loadAudio("heroplanet.mp3");
 
         entities.add(new MiddleCircle(this));
-
+        entities.add(new BottomRect(this));
     }
 
     @Override
@@ -49,8 +47,8 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        for (int i = 0; i < entities.size(); i++) {
-            entities.get(i).rander();
+        for (Randerable entity : entities) {
+            entity.rander();
         }
     }
 }
