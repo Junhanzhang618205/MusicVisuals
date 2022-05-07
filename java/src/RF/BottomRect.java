@@ -1,7 +1,5 @@
 package RF;
 
-import processing.core.PApplet;
-
 public class BottomRect implements Randerable {
     RfVisual rfVisual;
 

@@ -8,7 +8,9 @@ import java.util.List;
 
 public class RfVisual extends Visual {
 
-    List<Randerable> entities = new ArrayList<>();
+    List<Randerable> entities1 = new ArrayList<>();
+    List<Randerable> entities2 = new ArrayList<>();
+    List<Randerable> entities3 = new ArrayList<>();
     RunTime runTime = new RunTime();
 
     @Override
@@ -19,11 +21,18 @@ public class RfVisual extends Visual {
     @Override
     public void setup() {
         startMinim();
-        loadAudio("heroplanet.mp3");
+        loadAudio("MyMusic.mp3");
 
-        entities.add(new MiddleCircle(this));
-        entities.add(new BottomRect(this));
-        entities.add(new Line(this, runTime));
+        entities1.add(new MiddleCircle(this));
+        entities1.add(new BottomRect(this));
+        entities1.add(new Line(this, runTime));
+
+        entities2.add(new MiddleCircle(this));
+        entities2.add(new Ellipse(this, runTime));
+
+        entities3.add(new MiddleCircle(this));
+        entities3.add(new Wave(this, runTime));
+
     }
 
     @Override
@@ -54,8 +63,11 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        for (Randerable entity : entities) {
-            entity.rander();
+//        for (Randerable entity : entities1) {
+//            entity.rander();
+//        }
+        for (Randerable randerable : entities2) {
+            randerable.rander();
         }
     }
 }
