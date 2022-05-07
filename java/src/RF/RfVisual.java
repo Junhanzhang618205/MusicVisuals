@@ -9,6 +9,7 @@ import java.util.List;
 public class RfVisual extends Visual {
 
     List<Randerable> entities = new ArrayList<>();
+    RunTime runTime = new RunTime();
 
     @Override
     public void settings() {
@@ -22,6 +23,7 @@ public class RfVisual extends Visual {
 
         entities.add(new MiddleCircle(this));
         entities.add(new BottomRect(this));
+        entities.add(new Wave(this));
     }
 
     @Override
@@ -29,6 +31,11 @@ public class RfVisual extends Visual {
         if (key == ' ') {
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
+            if (runTime.isAlive()) {
+                runTime.init();
+            } else {
+                runTime.start();
+            }
         }
     }
 
