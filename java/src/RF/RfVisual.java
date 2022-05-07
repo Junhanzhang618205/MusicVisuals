@@ -23,7 +23,7 @@ public class RfVisual extends Visual {
 
         entities.add(new MiddleCircle(this));
         entities.add(new BottomRect(this));
-        entities.add(new Wave(this));
+        entities.add(new Line(this, runTime));
     }
 
     @Override
