@@ -15,7 +15,8 @@ public class RfVisual extends Visual {
 
     @Override
     public void settings() {
-        size(2048, 1024);
+       // size(2048, 1024); // if you want to run this program in linux
+        size(1024, 800);//if you are going to run this program in win
     }
 
     @Override
