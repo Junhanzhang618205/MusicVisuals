@@ -1,7 +1,7 @@
-package Kty;
+package RF;
 
 public class VerticalLine implements Randerable{
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
     @Override
     public void rander() {
 

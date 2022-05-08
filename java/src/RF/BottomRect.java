@@ -1,9 +1,9 @@
-package Kty;
+package RF;
 
 public class BottomRect implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
 
-    public BottomRect(KtyVisual rfVisual) {
+    public BottomRect(RfVisual rfVisual) {
         this.rfVisual = rfVisual;
     }
 

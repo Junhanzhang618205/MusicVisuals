@@ -1,4 +1,4 @@
-package Kty;
+package RF;
 
 import processing.core.PApplet;
 import processing.core.PConstants;
@@ -7,10 +7,10 @@ import static processing.core.PApplet.radians;
 
 
 public class star implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
     RunTime runTime;
 
-    public star(KtyVisual rfVisual, RunTime runTime) {
+    public star(RfVisual rfVisual, RunTime runTime) {
         this.rfVisual = rfVisual;
         this.runTime = runTime;
     }

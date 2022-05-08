@@ -1,4 +1,4 @@
-package Kty;
+package RF;
 
 public interface Randerable {
     void rander();

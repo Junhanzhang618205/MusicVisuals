@@ -1,4 +1,4 @@
-package Kty;
+package RF;
 
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
@@ -6,7 +6,7 @@ import ie.tudublin.VisualException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KtyVisual extends Visual {
+public class RfVisual extends Visual {
 
     List<Randerable> entities1 = new ArrayList<>();
     List<Randerable> entities2 = new ArrayList<>();

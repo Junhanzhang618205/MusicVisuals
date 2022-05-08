@@ -1,15 +1,15 @@
-package Kty;
+package RF;
 
 
 import static java.lang.Math.abs;
 import static processing.core.PApplet.*;
 
 public class RoundRect implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
     RunTime runTime;
 
-    public RoundRect(KtyVisual ktyVisual, RunTime runTime) {
-        this.rfVisual = ktyVisual;
+    public RoundRect(RfVisual rfVisual, RunTime runTime) {
+        this.rfVisual = rfVisual;
         this.runTime = runTime;
     }
 

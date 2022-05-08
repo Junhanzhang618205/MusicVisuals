@@ -1,14 +1,14 @@
-package Kty;
+package RF;
 
 import processing.core.PApplet;
 
 public class Line implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
     RunTime runTime;
     float cy = 0;
     float cx = 0;
 
-    public Line(KtyVisual rfVisual, RunTime runTime) {
+    public Line(RfVisual rfVisual, RunTime runTime) {
         this.rfVisual = rfVisual;
         this.runTime = runTime;
         cy = this.rfVisual.height / 2;

@@ -1,9 +1,9 @@
-package Kty;
+package RF;
 
 public class MiddleRect implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
 
-    public MiddleRect(KtyVisual rfVisual) {
+    public MiddleRect(RfVisual rfVisual) {
         this.rfVisual = rfVisual;
     }
 

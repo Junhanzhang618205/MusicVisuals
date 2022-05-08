@@ -1,9 +1,9 @@
-package Kty;
+package RF;
 
 public class BigCircle implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
 
-    public BigCircle(KtyVisual rfVisual) {
+    public BigCircle(RfVisual rfVisual) {
         this.rfVisual = rfVisual;
     }
 

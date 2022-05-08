@@ -1,4 +1,4 @@
-package Kty;
+package RF;
 
 import processing.core.PApplet;
 
@@ -6,10 +6,10 @@ import processing.core.PApplet;
  * This is Circle in the middle of the screen
  */
 public class MiddleCircle implements Randerable {
-    KtyVisual rfVisual;
+    RfVisual rfVisual;
 
 
-    public MiddleCircle(KtyVisual rfVisual) {
+    public MiddleCircle(RfVisual rfVisual) {
         this.rfVisual = rfVisual;
     }
 
