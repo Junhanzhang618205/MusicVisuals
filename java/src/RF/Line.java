@@ -20,6 +20,7 @@ public class Line implements Randerable {
         rfVisual.colorMode(PApplet.HSB);
         int len = rfVisual.getAudioBuffer().size();
         int plus = (int) runTime.getTime();
+        rfVisual.strokeWeight(4);
         for (int i = 0; i < len; i++) {
             if (i % 4 != 0) continue;
             rfVisual.stroke(
@@ -31,7 +32,7 @@ public class Line implements Randerable {
 
             float radius = Math.min(cx, cy) / 4;
 
-            radius += (radius * cur * 2.5);
+            radius = radius / 4 + (float) (radius * cur * 2.5);
 
             int x = (int) (cx - radius * Math.sin(Math.PI * (i + plus * 10) / len * 360));
             int y = (int) (cy - radius * Math.cos(Math.PI * (i + plus * 10) / len * 360));

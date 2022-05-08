@@ -23,8 +23,8 @@ public class Wave implements Randerable {
                     , 255
                     , 255
             );
-
             rfVisual.line(i, cy, i, cy + cy * rfVisual.getAudioBuffer().get(i));
+            rfVisual.line(rfVisual.width - i, cy, rfVisual.width - i, cy + cy * rfVisual.getAudioBuffer().get(i));
         }
     }
 }

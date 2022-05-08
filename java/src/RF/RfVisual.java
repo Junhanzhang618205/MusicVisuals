@@ -23,15 +23,17 @@ public class RfVisual extends Visual {
         startMinim();
         loadAudio("MyMusic.mp3");
 
-        entities1.add(new MiddleCircle(this));
         entities1.add(new BottomRect(this));
         entities1.add(new Line(this, runTime));
+        entities1.add(new BigCircle(this));
 
         entities2.add(new MiddleCircle(this));
-        entities2.add(new Ellipse(this, runTime));
+        entities2.add(new Wave(this, runTime));
+        entities2.add(new star(this, runTime));
+
 
         entities3.add(new MiddleCircle(this));
-        entities3.add(new Wave(this, runTime));
+        entities3.add(new RoundRect(this, runTime));
 
     }
 
@@ -63,10 +65,7 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-//        for (Randerable entity : entities1) {
-//            entity.rander();
-//        }
-        for (Randerable randerable : entities2) {
+        for (Randerable randerable : entities1) {
             randerable.rander();
         }
     }
