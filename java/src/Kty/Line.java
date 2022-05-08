@@ -1,14 +1,14 @@
-package RF;
+package Kty;
 
 import processing.core.PApplet;
 
 public class Line implements Randerable {
-    RfVisual rfVisual;
+    KtyVisual rfVisual;
     RunTime runTime;
     float cy = 0;
     float cx = 0;
 
-    public Line(RfVisual rfVisual, RunTime runTime) {
+    public Line(KtyVisual rfVisual, RunTime runTime) {
         this.rfVisual = rfVisual;
         this.runTime = runTime;
         cy = this.rfVisual.height / 2;
@@ -32,7 +32,7 @@ public class Line implements Randerable {
 
             float radius = Math.min(cx, cy) / 4;
 
-            radius = radius / 4 + (float) (radius * cur * 2.5);
+            radius = radius / 4 + (float) (1000 * cur * 2.5);
 
             int x = (int) (cx - radius * Math.sin(Math.PI * (i + plus * 10) / len * 360));
             int y = (int) (cy - radius * Math.cos(Math.PI * (i + plus * 10) / len * 360));

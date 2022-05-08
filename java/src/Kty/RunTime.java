@@ -1,4 +1,4 @@
-package RF;
+package Kty;
 
 public class RunTime extends Thread {
     private long startTime;

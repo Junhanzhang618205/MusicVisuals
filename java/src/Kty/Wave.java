@@ -1,12 +1,12 @@
-package RF;
+package Kty;
 
 import processing.core.PApplet;
 
 public class Wave implements Randerable {
-    RfVisual rfVisual;
+    KtyVisual rfVisual;
     RunTime runTime;
 
-    public Wave(RfVisual rfVisual, RunTime runTime) {
+    public Wave(KtyVisual rfVisual, RunTime runTime) {
         this.rfVisual = rfVisual;
         this.runTime = runTime;
     }

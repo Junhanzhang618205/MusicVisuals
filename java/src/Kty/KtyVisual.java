@@ -1,4 +1,4 @@
-package RF;
+package Kty;
 
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
@@ -6,7 +6,7 @@ import ie.tudublin.VisualException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RfVisual extends Visual {
+public class KtyVisual extends Visual {
 
     List<Randerable> entities1 = new ArrayList<>();
     List<Randerable> entities2 = new ArrayList<>();
@@ -31,7 +31,7 @@ public class RfVisual extends Visual {
         entities2.add(new Wave(this, runTime));
         entities2.add(new star(this, runTime));
 
-
+        entities3.add(new MiddleRect(this));
         entities3.add(new RoundRect(this, runTime));
 
     }
@@ -64,7 +64,7 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        for (Randerable randerable : entities3) {
+        for (Randerable randerable : entities1) {
             randerable.rander();
         }
     }

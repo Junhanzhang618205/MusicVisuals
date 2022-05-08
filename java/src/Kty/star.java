@@ -1,4 +1,4 @@
-package RF;
+package Kty;
 
 import processing.core.PApplet;
 import processing.core.PConstants;
@@ -7,10 +7,10 @@ import static processing.core.PApplet.radians;
 
 
 public class star implements Randerable {
-    RfVisual rfVisual;
+    KtyVisual rfVisual;
     RunTime runTime;
 
-    public star(RfVisual rfVisual, RunTime runTime) {
+    public star(KtyVisual rfVisual, RunTime runTime) {
         this.rfVisual = rfVisual;
         this.runTime = runTime;
     }
@@ -26,6 +26,7 @@ public class star implements Randerable {
         int len = rfVisual.getAudioBuffer().size();
         rfVisual.translate(cx, cy);
         rfVisual.ellipseMode(PConstants.RADIUS);
+        rfVisual.rotate(radians((float) runTime.getTime() / 100));
 
         for (int i = 0; i < 360; i++) {
             if (i % 4 != 0) continue;

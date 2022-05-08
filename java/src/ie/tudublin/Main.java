@@ -1,6 +1,6 @@
 package ie.tudublin;
 
-import RF.RfVisual;
+import Kty.KtyVisual;
 
 
 public class Main
@@ -9,7 +9,7 @@ public class Main
 	public void startUI()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new RfVisual());
+        processing.core.PApplet.runSketch( a, new KtyVisual());
 	}
 
 	public static void main(String[] args)
