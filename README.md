@@ -3,7 +3,7 @@
 Name: XXX
 
 Student Number:  XXXXXXXXXXX
-
+Required: Java 11
 ## Instructions
 - Fork this repository.
 - Enter the package [java](https://github.com/0ceanstar/MusicVisuals/tree/master/java).
