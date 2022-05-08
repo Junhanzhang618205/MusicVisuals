@@ -1,4 +1,4 @@
-package RF;
+package Jz;
 
 import ie.tudublin.Visual;
 import ie.tudublin.VisualException;
@@ -6,7 +6,7 @@ import ie.tudublin.VisualException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RfVisual extends Visual {
+public class JzVisual extends Visual {
 
     List<Renderable> view1 = new ArrayList<>();
     List<Renderable> view2 = new ArrayList<>();
