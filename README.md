@@ -3,8 +3,9 @@
 Name: XXX
 
 Student Number:  XXXXXXXXXXX
-Required: Java 11
+
 ## Instructions
+- Required: Java 11
 - Fork this repository.
 - Enter the package [java](https://github.com/0ceanstar/MusicVisuals/tree/master/java).
 - Run the shell [MyRun.sh](https://github.com/0ceanstar/MusicVisuals/blob/master/java/run.sh).
