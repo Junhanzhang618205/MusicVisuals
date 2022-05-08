@@ -24,12 +24,16 @@ public class MiddleCircle implements Randerable {
         float sum = 0;
         for (int i = 0; i < rfVisual.getAudioBuffer().size(); i++) {
             sum += rfVisual.getAudioBuffer().get(i);
+
         }
         avg = sum / (float) rfVisual.getAudioBuffer().size();
+        int color = (int) (100 * (1 + avg * 100));
         avg += base;
+        if (color <= 0) color = 0;
+        else if (color >= 255) color = 255;
 
         rfVisual.stroke(255);
-        rfVisual.fill(100, 255, 255);
+        rfVisual.fill(color, 255, 255);
         rfVisual.circle(rfVisual.width / 2, rfVisual.height / 2, avg * mag);
     }
 }

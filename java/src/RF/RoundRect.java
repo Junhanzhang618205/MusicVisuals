@@ -1,6 +1,8 @@
 package RF;
 
 
+import processing.core.PApplet;
+
 import static java.lang.Math.abs;
 import static processing.core.PApplet.*;
 
@@ -28,11 +30,16 @@ public class RoundRect implements Randerable {
             float degree = PI * (i);
             float width = ((2 * PI * radius) / num) / 2;
             float height = 5 + 100 * abs(cur);
+            rfVisual.fill(
+                    PApplet.map(i, 0, 360, 0, 255)
+                    , 100
+                    , 150
+            );
             rfVisual.rotate(radians((360 / num)));
-                rfVisual.rect(radius * sin(degree)
-                        , radius * cos(degree)
-                        , width
-                        , height);
+            rfVisual.rect(radius * sin(degree)
+                    , radius * cos(degree)
+                    , width
+                    , height);
         }
 
     }

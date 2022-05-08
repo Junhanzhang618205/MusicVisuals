@@ -8,9 +8,9 @@ import java.util.List;
 
 public class RfVisual extends Visual {
 
-    List<Randerable> entities1 = new ArrayList<>();
-    List<Randerable> entities2 = new ArrayList<>();
-    List<Randerable> entities3 = new ArrayList<>();
+    List<Randerable> view1 = new ArrayList<>();
+    List<Randerable> view2 = new ArrayList<>();
+    List<Randerable> view3 = new ArrayList<>();
     RunTime runTime = new RunTime();
 
     @Override
@@ -23,16 +23,17 @@ public class RfVisual extends Visual {
         startMinim();
         loadAudio("MyMusic.mp3");
 
-        entities1.add(new BottomRect(this));
-        entities1.add(new Line(this, runTime));
-        entities1.add(new BigCircle(this));
+        view1.add(new BottomRect(this));
+        view1.add(new Line(this, runTime));
+        view1.add(new BigCircle(this));
 
-        entities2.add(new MiddleCircle(this));
-        entities2.add(new Wave(this, runTime));
-        entities2.add(new star(this, runTime));
+        view2.add(new MiddleCircle(this));
+        view2.add(new Wave(this, runTime));
+        view2.add(new star(this, runTime));
 
-        entities3.add(new MiddleRect(this));
-        entities3.add(new RoundRect(this, runTime));
+        view3.add(new MiddleRect(this));
+        view3.add(new VerticalWave(this));
+        view3.add(new RoundRect(this, runTime));
 
     }
 
@@ -64,8 +65,19 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        for (Randerable randerable : entities1) {
-            randerable.rander();
+        int time = (int) (runTime.getTime() / 1000);
+        if (time <= 30) {
+            for (Randerable randerable : view1) {
+                randerable.rander();
+            }
+        } else if (time <= 60) {
+            for (Randerable randerable : view2) {
+                randerable.rander();
+            }
+        } else {
+            for (Randerable randerable : view3) {
+                randerable.rander();
+            }
         }
     }
 }
