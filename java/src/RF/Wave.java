@@ -2,7 +2,7 @@ package RF;
 
 import processing.core.PApplet;
 
-public class Wave implements Randerable {
+public class Wave implements Renderable {
     RfVisual rfVisual;
     RunTime runTime;
 
@@ -12,7 +12,7 @@ public class Wave implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
 
         float cy = rfVisual.height / 2;
         rfVisual.colorMode(PApplet.HSB);

@@ -1,6 +1,6 @@
 package RF;
 
-public class BigCircle implements Randerable {
+public class BigCircle implements Renderable {
     RfVisual rfVisual;
 
     public BigCircle(RfVisual rfVisual) {
@@ -8,7 +8,7 @@ public class BigCircle implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float cx = rfVisual.width / 2;
         float cy = rfVisual.height / 2;
 

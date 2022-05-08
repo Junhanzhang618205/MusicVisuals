@@ -5,7 +5,7 @@ import processing.core.PApplet;
 /**
  * This is Circle in the middle of the screen
  */
-public class MiddleCircle implements Randerable {
+public class MiddleCircle implements Renderable {
     RfVisual rfVisual;
 
 
@@ -14,7 +14,7 @@ public class MiddleCircle implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         rfVisual.colorMode(PApplet.HSB);
 
         float mag = 500;

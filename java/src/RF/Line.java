@@ -2,7 +2,7 @@ package RF;
 
 import processing.core.PApplet;
 
-public class Line implements Randerable {
+public class Line implements Renderable {
     RfVisual rfVisual;
     RunTime runTime;
     float cy = 0;
@@ -16,7 +16,7 @@ public class Line implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         rfVisual.colorMode(PApplet.HSB);
         int len = rfVisual.getAudioBuffer().size();
         int plus = (int) runTime.getTime();

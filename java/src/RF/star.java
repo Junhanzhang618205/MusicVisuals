@@ -6,7 +6,7 @@ import processing.core.PConstants;
 import static processing.core.PApplet.radians;
 
 
-public class star implements Randerable {
+public class star implements Renderable {
     RfVisual rfVisual;
     RunTime runTime;
 
@@ -16,7 +16,7 @@ public class star implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float cx = rfVisual.width / 2;
         float cy = rfVisual.height / 2;
         rfVisual.colorMode(PApplet.HSB);

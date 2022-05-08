@@ -8,9 +8,9 @@ import java.util.List;
 
 public class RfVisual extends Visual {
 
-    List<Randerable> view1 = new ArrayList<>();
-    List<Randerable> view2 = new ArrayList<>();
-    List<Randerable> view3 = new ArrayList<>();
+    List<Renderable> view1 = new ArrayList<>();
+    List<Renderable> view2 = new ArrayList<>();
+    List<Renderable> view3 = new ArrayList<>();
     RunTime runTime = new RunTime();
 
     @Override
@@ -67,16 +67,16 @@ public class RfVisual extends Visual {
 
         int time = (int) (runTime.getTime() / 1000);
         if (time <= 30) {
-            for (Randerable randerable : view1) {
-                randerable.rander();
+            for (Renderable randerable : view1) {
+                randerable.render();
             }
         } else if (time <= 60) {
-            for (Randerable randerable : view2) {
-                randerable.rander();
+            for (Renderable randerable : view2) {
+                randerable.render();
             }
         } else {
-            for (Randerable randerable : view3) {
-                randerable.rander();
+            for (Renderable renderable : view3) {
+                renderable.render();
             }
         }
     }

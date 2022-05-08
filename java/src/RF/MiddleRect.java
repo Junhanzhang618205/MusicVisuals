@@ -1,6 +1,6 @@
 package RF;
 
-public class MiddleRect implements Randerable {
+public class MiddleRect implements Renderable {
     RfVisual rfVisual;
 
     public MiddleRect(RfVisual rfVisual) {
@@ -8,7 +8,7 @@ public class MiddleRect implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float cx = rfVisual.width / 2;
         float cy = rfVisual.height / 2;
         float gap = 300 / (float) rfVisual.getBands().length;

@@ -2,7 +2,7 @@ package RF;
 
 import processing.core.PApplet;
 
-public class VerticalWave implements Randerable {
+public class VerticalWave implements Renderable {
     RfVisual rfVisual;
 
     public VerticalWave(RfVisual rfVisual) {
@@ -10,7 +10,7 @@ public class VerticalWave implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float cy = rfVisual.height / 2;
         rfVisual.colorMode(PApplet.HSB);
         int len = rfVisual.getAudioBuffer().size();

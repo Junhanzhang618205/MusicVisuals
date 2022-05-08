@@ -6,7 +6,7 @@ import processing.core.PApplet;
 import static java.lang.Math.abs;
 import static processing.core.PApplet.*;
 
-public class RoundRect implements Randerable {
+public class RoundRect implements Renderable {
     RfVisual rfVisual;
     RunTime runTime;
 
@@ -16,7 +16,7 @@ public class RoundRect implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float cx = rfVisual.width / 2;
         float cy = rfVisual.height / 2;
         rfVisual.translate(cx, cy);

@@ -1,6 +1,6 @@
 package RF;
 
-public class BottomRect implements Randerable {
+public class BottomRect implements Renderable {
     RfVisual rfVisual;
 
     public BottomRect(RfVisual rfVisual) {
@@ -8,7 +8,7 @@ public class BottomRect implements Randerable {
     }
 
     @Override
-    public void rander() {
+    public void render() {
         float gap = rfVisual.width / (float) rfVisual.getBands().length;
         rfVisual.noStroke();
         for (int i = 0; i < rfVisual.getBands().length; i++) {
