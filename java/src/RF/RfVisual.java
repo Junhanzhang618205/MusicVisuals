@@ -32,7 +32,6 @@ public class RfVisual extends Visual {
         entities2.add(new star(this, runTime));
 
 
-        entities3.add(new MiddleCircle(this));
         entities3.add(new RoundRect(this, runTime));
 
     }
@@ -65,7 +64,7 @@ public class RfVisual extends Visual {
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();
 
-        for (Randerable randerable : entities1) {
+        for (Randerable randerable : entities3) {
             randerable.rander();
         }
     }
