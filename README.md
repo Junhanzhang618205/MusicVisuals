@@ -1,8 +1,8 @@
 # Music Visualiser Project
 
-Name: XXX
+Name: Junhan Zhang
 
-Student Number:  XXXXXXXXXXX
+Student Numble: D20126150
 
 ## Instructions
 - Required: Java 11
